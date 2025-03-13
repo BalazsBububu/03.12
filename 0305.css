@@ -6,11 +6,10 @@ body {
 .div1 {
     display: grid;
     background: linear-gradient(to bottom, #6743ff 0%, #312cea 100%);
-    width: 250px;
     text-align: center;
     border-radius: 25px;
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 6;
     z-index: 2;
 }
 
@@ -81,16 +80,16 @@ body {
 .div3 {
     display: grid;
     background-color: white;
-    width: 400px;
     border-radius: 25px;
     box-shadow: 0px 0px 60px rgb(192, 204, 226);
     font-family: hankenbold;
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 2;
+    grid-row: 1 / span 6;
+    grid-column: 2 / span 4;
 
 }
 
 .p6 {
+    display: grid;
     margin-left: 110px;
     margin-top: 20px;
     color: #172b47;
@@ -142,9 +141,13 @@ body {
     margin-bottom: 25px;
 }
 
-.minden {
+section {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    width: 800px;
+    margin: auto;
+    
 }
 
 .button {
@@ -153,16 +156,18 @@ body {
     padding: 9px;
     text-align: center;
     font-size: 80%;
+    text-decoration: none;
+    display: inline-block;
     margin-left: 115px;  
     cursor: pointer;
     background-color: #172b47;
     border-radius: 50px;
     width: 250px;
-    transition: 0.4s;
     margin-bottom: 30px;
+    transition-duration: 0.4s;
 }
 
 .button:hover {
     background: linear-gradient(to bottom, #6743ff 0%, #312cea 100%);
-    transition: 0.4s;
 }
+  
